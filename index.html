@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b3d91">
+<title>SoporteBot TI · Grupo 3</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #0b3d91; }
+  iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; background: #eef5fb; }
+</style>
+</head>
+<body>
+<!--
+  Página contenedora: muestra el bot de Apps Script a pantalla completa, sin el aviso
+  "Un usuario de Google Apps Script creó esta aplicación".
+  Pega abajo la URL de tu implementación (la que termina en /exec).
+-->
+<iframe id="app" title="SoporteBot TI"></iframe>
+<script>
+  const URL_APP = https://script.google.com/macros/s/AKfycbw0GKUHmGCJhPvtz6I6y1uxMeZfmbUUQMlooK5xpzTpaEecicq9sJIsJf2gmyjXt9Lq2g/exec;
+
+  document.getElementById('app').src = URL_APP;
+</script>
+</body>
+</html>
